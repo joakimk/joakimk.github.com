@@ -18,7 +18,7 @@ How it used to be:
 
 30 minutes...
 
-When using testbot:
+How it is now:
 ----
 
 ![Fast specs part 1](/images/posts/fast_specs1.png)
