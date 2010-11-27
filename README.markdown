@@ -6,6 +6,7 @@ It is automatically transformed by [Jekyll](http://github.com/mojombo/jekyll) in
 This is based on Tom Preston-Werner's [blog](https://github.com/mojombo/mojombo.github.com).
 
 License
+----
 
 The following directories and their contents are Copyright Joakim Kolsjö. You may not reuse anything therein without my permission:
 
