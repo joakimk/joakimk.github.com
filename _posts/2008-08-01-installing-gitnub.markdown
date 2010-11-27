@@ -7,7 +7,7 @@ tags: git macosx
 {{ page.title }}
 ====
 
-A script to install the <a href="http://github.com/Caged/gitnub/wikis">GitNub</a> utility (MacOSX Leopard).
+A script to install the [GitNub](http://github.com/Caged/gitnub/wikis) utility (MacOSX Leopard).
 
 **Update:** Had some problems when I reinstalled this version but it seems that they have fixed it in the latest version.
 

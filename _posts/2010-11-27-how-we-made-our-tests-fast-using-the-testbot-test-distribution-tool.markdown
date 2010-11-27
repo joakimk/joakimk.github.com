@@ -24,7 +24,10 @@ How it is now:
 ![Fast specs part 1](/images/posts/fast_specs1.png)
 ![Fast specs part 2](/images/posts/fast_specs2.png)
 
-**2 minutes!**
+**2 minutes!** 
+
+Background:
+----
 
 Initially we found the [parallel_tests](https://github.com/grosser/parallel_tests)
 project which allowed use of both the cores of our machines which
@@ -39,6 +42,9 @@ We also found [specjour](https://github.com/sandro/specjour) but it
 was designed to work with bonjour which would have limited us to only be
 able to run our tests fast when at the office. It
 would also not be possible to use other idle server resources.
+
+Testbot
+----
 
 So I decided to create my own project, [testbot](https://github.com/joakimk/testbot).
 It's been almost a year in the making and this week it was released
