@@ -17,7 +17,7 @@ How it used to be:
 
 
 Initially we found the [parallel_tests](https://github.com/grosser/parallel_tests)
-project which allowed use both the cores of our machines which
+project which allowed use of both the cores of our machines which
 essentially cut the test runtime in half. As the suite
 was still a bit too heavy we started to look for tools that
 would allow us to use all our computers when running the tests.
@@ -33,7 +33,7 @@ would also not be possible to use other idle server resources.
 So I decided to create my own project, [testbot](https://github.com/joakimk/testbot).
 It's been almost a year in the making and this week it was released
 [as a gem](https://rubygems.org/gems/testbot)
-with a greatly simplfied command line interface.
+with a simple command line interface.
 
 Testbot is designed around the idea that test distribution should be
 easy. One of the main benefits of the system is that you can add and
@@ -44,7 +44,7 @@ resources almost anywhere, developer workstations, virtualized servers,
 
 A short example of how testbot is used:
 - On a computer at **192.168.0.10** you run **testbot --server**
-- On multiple across your network you run **testbot --runner --connect 192.168.0.10**
+- On multiple computers you run **testbot --runner --connect 192.168.0.10**
 - On your computer you run **rake testbot:spec**
 - Done!
 
