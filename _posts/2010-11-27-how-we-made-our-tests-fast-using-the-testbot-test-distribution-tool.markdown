@@ -8,13 +8,23 @@ title: How we made our tests fast using the testbot test distribution tool
 
 We had a pretty common problem at work. Our test suite was starting to
 take way too long to run and the conventional methods like optimizing
-slow tests wasn't quite enough.
+slow tests weren't quite enough.
 
 How it used to be:
+----
 
 ![Slow specs part 1](/images/posts/slow_specs1.png)
 ![Slow specs part 2](/images/posts/slow_specs2.png)
 
+30 minutes...
+
+When using testbot:
+----
+
+![Fast specs part 1](/images/posts/fast_specs1.png)
+![Fast specs part 2](/images/posts/fast_specs2.png)
+
+**1.5 minutes!**
 
 Initially we found the [parallel_tests](https://github.com/grosser/parallel_tests)
 project which allowed use of both the cores of our machines which
@@ -22,7 +32,7 @@ essentially cut the test runtime in half. As the suite
 was still a bit too heavy we started to look for tools that
 would allow us to use all our computers when running the tests.
 
-The first project we found where [DeepTest](http://deep-test.rubyforge.org/)
+The first project we found was [DeepTest](http://deep-test.rubyforge.org/)
 but never actually got up and running with it as it seemed way too complex.
 
 We also found [specjour](https://github.com/sandro/specjour) but it
@@ -43,15 +53,10 @@ resources almost anywhere, developer workstations, virtualized servers,
 [PXE booted clusters](https://gist.github.com/622495), [Amazon EC2](https://github.com/joakimk/cloud_bot), ...
 
 A short example of how testbot is used:
-- On a computer at **192.168.0.10** you run **testbot --server**
+- On a computer, e.g. **192.168.0.10** you run **testbot --server**
 - On multiple computers you run **testbot --runner --connect 192.168.0.10**
 - On your computer you run **rake testbot:spec**
 - Done!
-
-The results:
-
-![Fast specs part 1](/images/posts/fast_specs1.png)
-![Fast specs part 2](/images/posts/fast_specs2.png)
 
 Testbot currently supports Test::Unit, RSpec, Cucumber, Rails 2 and Rails 3. 
 
