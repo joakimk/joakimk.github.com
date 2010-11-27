@@ -24,7 +24,7 @@ How it is now:
 ![Fast specs part 1](/images/posts/fast_specs1.png)
 ![Fast specs part 2](/images/posts/fast_specs2.png)
 
-**1.5 minutes!**
+**2 minutes!**
 
 Initially we found the [parallel_tests](https://github.com/grosser/parallel_tests)
 project which allowed use of both the cores of our machines which
