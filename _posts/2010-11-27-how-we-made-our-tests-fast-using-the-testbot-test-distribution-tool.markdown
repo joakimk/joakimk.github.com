@@ -24,7 +24,7 @@ How it is now
 ![Fast specs part 1](/images/posts/fast_specs1.png)
 ![Fast specs part 2](/images/posts/fast_specs2.png)
 
-**2 minutes!** 
+2 minutes!
 
 Background
 ----
@@ -43,7 +43,7 @@ was designed to work with bonjour which would have limited us to only be
 able to run our tests fast when at the office. It
 would also not be possible to use other idle server resources.
 
-Testbot
+Introducing testbot
 ----
 
 I decided to create [testbot](https://github.com/joakimk/testbot).
