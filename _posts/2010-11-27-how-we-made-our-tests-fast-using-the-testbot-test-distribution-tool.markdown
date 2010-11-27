@@ -10,7 +10,7 @@ We had a pretty common problem at work. Our test suite was starting to
 take way too long to run and the conventional methods like optimizing
 slow tests weren't quite enough.
 
-How it used to be:
+How it used to be
 ----
 
 ![Slow specs part 1](/images/posts/slow_specs1.png)
@@ -18,7 +18,7 @@ How it used to be:
 
 30 minutes...
 
-How it is now:
+How it is now
 ----
 
 ![Fast specs part 1](/images/posts/fast_specs1.png)
@@ -26,7 +26,7 @@ How it is now:
 
 **2 minutes!** 
 
-Background:
+Background
 ----
 
 Initially we found the [parallel_tests](https://github.com/grosser/parallel_tests)
@@ -46,7 +46,7 @@ would also not be possible to use other idle server resources.
 Testbot
 ----
 
-So I decided to create my own project, [testbot](https://github.com/joakimk/testbot).
+I decided to create [testbot](https://github.com/joakimk/testbot).
 It's been almost a year in the making and this week it was released
 [as a gem](https://rubygems.org/gems/testbot)
 with a simple command line interface.
