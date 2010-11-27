@@ -11,6 +11,7 @@ The following directories and their contents are Copyright Joakim Kolsjö. You m
 
     _posts/
     images/
+    other/
 
 All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. 
 
