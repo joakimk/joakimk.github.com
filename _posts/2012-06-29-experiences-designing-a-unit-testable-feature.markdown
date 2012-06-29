@@ -42,4 +42,4 @@ Overall I'm quite happy with it, it's was simple to add new things as I flushed 
 
 Let's see how it goes over time. There are some people that think that if you don't test everything with integrated tests, then how are you to know that everything works... better not try :P. I think this has just enough integrated tests to make me feel confident and no more.
 
-This post can also be found at: https://gist.github.com/3017504
+This post can also be found at: [https://gist.github.com/3017504](https://gist.github.com/3017504).
