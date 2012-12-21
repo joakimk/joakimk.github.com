@@ -37,7 +37,7 @@ As a bonus I've found it much easier to do TDD when I'm that close to the code.
 
 To be able to do isolated unit testing you need to be able to run code in isolation from rails. A good start is adding a [second set of tests to your rails app](https://github.com/joakimk/fast_unit_tests_example). Start with a single test. Then each time you find a concept in your system that isn't dependent on anything else, use the isolated test suite. A few easy ones to start out with is formatting (currency, numbers, time), validation and calculations.
 
-When you've run out of easy parts of the code to test you might want to start thinking about separating separating integrated code (db queries, etc.) from other code in other to test that code in isolation.
+When you've run out of easy parts of the code to test you might want to start thinking about separating integrated code (db queries, etc.) from other code in other to test that code in isolation.
 
 When you do this you introduce more code and abstractions, which has a cost but seems to be a worthwhile tradeoff because:
 
