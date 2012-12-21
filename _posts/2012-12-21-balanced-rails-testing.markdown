@@ -49,7 +49,7 @@ When you do this you introduce more code and abstractions, which has a cost but 
 
 ### Hexagonal Rails
 
-All of this is very much related to Matt Wynne's [Hexagonal Rails](http://blog.mattwynne.net/2012/05/31/hexagonal-rails-objects-values-and-hexagons/):
+This is very much related to Matt Wynne's [Hexagonal Rails](http://blog.mattwynne.net/2012/05/31/hexagonal-rails-objects-values-and-hexagons/):
 
 "The fundamental idea behind this style of architecture is to isolate the core domain of your program—the bit that defines its unique and interesting behaviour—from the technical infrastructure that enables it to talk to the outside world. Technical infrastructure means things like databases, file systems, user interfaces, web services and message queues."
 
