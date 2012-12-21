@@ -55,11 +55,7 @@ This way of working is very much related to Matt Wynne's [Hexagonal Rails](http:
 
 "There are apparent costs too. As I’ve moved the Relish codebase towards a more hexagonal style, I’ve noticed that there’s more code appearing. However, each piece of code is simpler to understand, and the pieces are much less coupled together, giving me flexibility for the future."
 
-### Test pyramid
-
-When you do balanced testing you will end up with a test suite that have mostly unit tests, fewer integrated tests and very few acceptance tests. This phenomenon has been named a test pyramid by Mike Cohn and Martin Fowler describes it well in [http://martinfowler.com/bliki/TestPyramid.html](http://martinfowler.com/bliki/TestPyramid.html).
-
-### Related things you might like
+### Related things
 <br/>
 * "Look at your Rails unit test suite. Now look at mine. Now look at yours again. Mine are sub-second. Yours aren't.": [http://www.confreaks.com/videos/641-gogaruco2011-fast-rails-tests](http://www.confreaks.com/videos/641-gogaruco2011-fast-rails-tests)
 * Excellent screencasts on isolated unit testing, TDD, OO-design and more: [https://www.destroyallsoftware.com/](https://www.destroyallsoftware.com/)
