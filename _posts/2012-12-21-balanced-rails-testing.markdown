@@ -65,4 +65,4 @@ When you do balanced testing you will end up with a test suite that have mostly 
 * Excellent screencasts on isolated unit testing, TDD, OO-design and more: [https://www.destroyallsoftware.com/](https://www.destroyallsoftware.com/)
 * Really good talk on how to use unit tests effectively: [Hashrocket Lunch n' Learn with Sandi Metz - The Design of Tests](http://vimeo.com/48106365)
 * I've written about my experiences building a feature in a way where over 90% of the tests are unit tests: [http://rubyblocks.se/2012/06/29/experiences-designing-a-unit-testable-feature/](http://rubyblocks.se/2012/06/29/experiences-designing-a-unit-testable-feature/).
-* My [minimapper](https://github.com/joakimk/minimapper) project: *"Minimapper is a minimalistic way of separating models from ORMs like ActiveRecord. It enables you to test your models (and code using your models) within a sub-second unit test suite and makes it simpler to have a modular design as described in Matt Wynne's Hexagonal Rails posts"*
+ " and makes it simpler to have a modular design as described in Matt Wynne's Hexagonal Rails posts"*
