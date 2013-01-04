@@ -1,13 +1,10 @@
-desc "Generate html"
+desc "Auto generate when files change"
 task :default do
-  system "jekyll"
+  system "guard -i"
 end
 
-desc "Auto generate"
-task :auto do
-  loop do
-    system "jekyll"
-    sleep 1
-  end
+desc "Generate html"
+task :build do
+  system "jekyll"
 end
 
