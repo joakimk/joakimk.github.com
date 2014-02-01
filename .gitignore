@@ -1,4 +1,4 @@
 *.swp
 **/*.swp
 _site
-public
+_posts/*draft*

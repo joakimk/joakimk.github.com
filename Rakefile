@@ -1,6 +1,6 @@
 desc "Auto generate when files change"
 task :default do
-  system "jekyll --auto"
+  system "guard -i"
 end
 
 desc "Generate html"
