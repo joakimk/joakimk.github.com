@@ -13,6 +13,6 @@ To control the lamps we use a [TellStick](http://www.telldus.se/products/tellsti
 which is a transmitter that plugs into USB and lets us control wireless remote switches.
 
 [https://gist.github.com/89810](https://gist.github.com/89810):
+
 <script src="https://gist.github.com/89810.js">
 </script>
-
