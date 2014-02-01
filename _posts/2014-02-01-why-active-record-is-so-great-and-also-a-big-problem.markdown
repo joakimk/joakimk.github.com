@@ -1,8 +1,7 @@
-
 ---
 layout: post
 title: Why ActiveRecord is so great and also a big problem
-tags:
+tags: ruby code-design unit-testing testing active-record
 ---
 
 {{ page.title }}
