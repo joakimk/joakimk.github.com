@@ -19,10 +19,20 @@ Yes you can use a pre-loader like spork but that is essentially caching and occa
 
 I like comparing test runtimes to web page load speeds. When they get over 200-300ms, you don't browse as much. It's the same with tests. You want your unit tests to feel instant so that you use them all the time.
 
+## It's really about design
+
+When a test takes a long time to run it is most likely an indicator of a problem with the design. The only real exception to this is if it's a test that is testing integration.
+
+If you think about it, ActiveRecords are pretty poor at following SRP (single responsibility principe). Some of the things they do are: persistance, validation, form input parsing, query generation and domain logic.
+
+Do you allow the other objects in your system to be like that? :)
+
 ## Alterantives?
 
 It seems that at this point there isn't many good alternatives to using ActiveRecord. At [barsoom](barsoom.se) we tried to hide ActiveRecord away behind a datamapper in one of our projects but that hasn't really increased the velocity in any noticable way and has maybe even made development slower.
 
-One big cause of this is that stuff just don't work the way you're used to. Another big problem is that there isn't really a datamapper that is as good or better than using ActiveRecord yet. I'm hoping for rom to get there... someday.
+One big problem with doing that is that stuff just don't work the way you're used to. Another big problem is that there isn't really a datamapper that is as good or better than using ActiveRecord yet. I'm hoping for ROM to get there... someday.
+
+## Working within the system
 
 In a later post I'll talk about how you can make testing a much better experience even if you're stuck with ActiveRecord. For now, if you haven't already, go read [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/) and watch [Fast Rails Tests Corey Haines](http://www.youtube.com/watch?v=bNn6M2vqxHE).
