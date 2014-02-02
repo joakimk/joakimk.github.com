@@ -29,7 +29,7 @@ Do you allow the other objects in your system to be like that? :)
 
 ## Alterantives?
 
-It seems that at this point there isn't many good alternatives to using ActiveRecord. At [barsoom](barsoom.se) we tried to hide ActiveRecord away behind a datamapper in one of our projects but that hasn't really increased the velocity in any noticable way and has maybe even made development slower.
+It seems that at this point there isn't many good alternatives to using ActiveRecord. At [barsoom](http://barsoom.se) we tried to hide ActiveRecord away behind a datamapper in one of our projects but that hasn't really increased the velocity in any noticable way and has maybe even made development slower.
 
 One big problem with doing that is that stuff just don't work the way you're used to. Another big problem is that there isn't really a datamapper that is as good or better than using ActiveRecord yet. I'm hoping for ROM to get there... someday.
 
