@@ -13,9 +13,9 @@ Even with all that, letting your models inherit from ActiveRecord::Base is a bit
 
 ### Now is that really so bad?
 
-For a little comparison, if you write a plain unit test in ruby you can get feedback in maybe 200ms (0.2 seconds). When you have to load ActiveRecord this becomes something like 1600ms. In most apps this is even worse because you load all of rails.
+Let's do a little comparison: if you write a plain unit test in ruby you can get feedback in maybe 200ms (0.2 seconds). When you have to load ActiveRecord this becomes something like 1600ms. In most apps this is even worse because you load all of rails.
 
-Yes you can use a pre-loader like spork but that is essentially caching and occasionally it bites you.
+Yes, you can use a pre-loader like spork but that is essentially caching and occasionally it bites you.
 
 I like comparing test runtimes to web page load speeds. When they get over 200-300ms, you don't browse as much. It's the same with tests. You want your unit tests to feel instant so that you use them all the time.
 
