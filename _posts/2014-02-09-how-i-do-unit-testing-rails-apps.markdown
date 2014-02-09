@@ -14,15 +14,15 @@ A dedicated unit test suite is great because it gives you much faster feedback a
 
 ### Unit tests
 
-When I talk about unit tests, I mean tests that only test one thing. A unit of code. That may be a method, a class or a small set of classes. The most important thing though is that the test is about the behavior of that unit. It does not test how the code interacts with the filesystem, the network or other such heavy things. As such it's very fast. A unit test that is slower than a few milliseconds is probably doing something odd.
+When I talk about unit tests, I mean tests that only test one thing. A unit of code. That may be a method, a class or a small set of classes. The most important thing though is that the test is about the behavior of only that unit. It does not test how the code interacts with the filesystem, the network or other such heavy things. As such it's very fast. A unit test that is slower than a few milliseconds is probably doing something odd.
 
 A good reason to keep tests that fast is that you can run them all the time. Not only before commit or in CI.
 
 ### The tools
 
-To add support for running non-rails unit tests to your app, look at the [example app](https://github.com/joakimk/fast_unit_tests_example) I've setup on github. You need to add a few simple files and edit your Rakefile a bit. It should only take a few minutes, and won't affect the rest of the app at all.
+To add support for running non-rails unit tests in your app, look at the [example app](https://github.com/joakimk/fast_unit_tests_example) I've setup on github. You need to add a few simple files and edit your Rakefile a bit. It should only take a few minutes, and won't affect the rest of the app at all.
 
-In the example app you will see that the Rakefile is changed so that some of the raketasks can be run without loading rails. This is useful for other things as well. I've seen it used for everything from benchmarking to installing project specific githooks.
+In the example app you will see that the Rakefile is changed so that some of the raketasks (like rake spec:unit) can be run without loading rails. This is useful for other things as well. I've seen it used for everything from benchmarking to installing project specific githooks.
 
 ### The simple stuff
 
@@ -45,8 +45,6 @@ Go read [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate
 I usually start with a rspec feature test using capybara. I tend to write tests on this level to cover the paths though the controller layer. Usually there are only two. Success and failure.
 
 I use this stategy because it covers both controllers and views. If I feel the need to add more logic to the views I usually extract that into presenters which I unit test separately. The controllers tend to remain very thin and that is good because controllers do enough already filling the role of [web adapters](http://blog.mattwynne.net/2012/05/31/hexagonal-rails-objects-values-and-hexagons/) within your application.
-
-One pattern I've found that work really well in rails apps is to split up the code between integration and logic. This was inspired by Gary's [Functional Core, Imperative Shell](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell) idea.
 
 Say we're creating an invoice. In the controller we have the following code:
 
@@ -115,6 +113,8 @@ This inner class would be tested within the non-rails unit test suite. I'd proba
 The point here is that the inner class contains all the logic, which is exactly what unit testing is good at. I've found that this pattern works well in most cases where you need to load up some data, make some decisions, build some kind of objects and then persist them.
 
 If you call these classes CreateInvoice, CreatesInvoice, InvoiceCreator, Build, Builder or InvoiceBuilder does not really matter. Use something that fits the style of your project.
+
+This design is inspired by Gary's [Functional Core, Imperative Shell](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell) idea.
 
 ### Working with ActiveRecords
 
