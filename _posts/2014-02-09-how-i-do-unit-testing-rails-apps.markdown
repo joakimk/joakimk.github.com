@@ -58,8 +58,6 @@ Say we're creating an invoice. In the controller we have the following code:
       end
     end
 
-CreateInvoice only deals with integration. This makes it perfect for integrated tests that use the database and checks for sent emails, etc.
-
 This class could look something like this:
 
     # app/models/create_invoice.rb
@@ -80,6 +78,8 @@ This class could look something like this:
     end
 
 At most this class requires two integrated tests. One to ensure a valid invoice is persisted and the customer notifed, one to ensure we don't notify if it's not.
+
+CreateInvoice only deals with integration. This makes it perfect for integrated tests that use the database and checks for sent emails, etc.
 
 The interesting part of this is the inner class, CreateInvoice::Build, which would look something like this:
 
