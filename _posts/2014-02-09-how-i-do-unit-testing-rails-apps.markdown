@@ -58,7 +58,7 @@ Say we're creating an invoice. In the controller we have the following code:
       end
     end
 
-The CreateInvoice invoice is the imperative shell and as far as possible it should only care about integration. This makes it perfect for integrated tests that use the database and checks for sent emails, etc.
+CreateInvoice only deals with integration. This makes it perfect for integrated tests that use the database and checks for sent emails, etc.
 
 This class could look something like this:
 
