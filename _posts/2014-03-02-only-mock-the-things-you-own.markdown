@@ -29,10 +29,9 @@ And move the calls to Net::FTP into an FTP adapter, which you then test using in
 
     it "can download a file" do
       test_server = make_ftp_server_with({ "remote/path/foo.jpg" => "image-data" })
-      file = ImageFile.new("remote/path/foo.jpg")
 
       client = FtpClient.new(test_server)
-      client.download_file(file, "tmp/test")
+      client.download_file("remote/path/foo.jpg", "tmp/test")
 
       expect(File.read("tmp/test/foo.jpg")).to eq("image-data")
     end
