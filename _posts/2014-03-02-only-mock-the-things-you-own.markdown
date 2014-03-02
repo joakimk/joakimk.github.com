@@ -15,7 +15,7 @@ Say you mock something you don't own, like `Net::FTP`:
 
 Basically the only thing you gain is a passing test. It gives no assurance at all that the code actually does the right thing.
 
-So what is the alternative? Use mocks to define the API you need, then provide that API in an adapter, which will be the only part of your code that is coupled to the external library.
+So what is the alternative? Use a mock to define the API you need, then provide that API in an adapter, which will be the only part of your code that is coupled to the external library.
 
 So instead of doing this:
 
