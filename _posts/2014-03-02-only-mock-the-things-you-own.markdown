@@ -13,7 +13,7 @@ Say you mock something you don't own, like `Net::FTP`:
 
     expect(ftp).to receive(:getbinaryfile).with("name.jpg", "local/name.jpg", 1024)
 
-What do you gain? A simulated behavior to make the test pass. A brittle test that gives no assurance that the code actually works at all. At worst even a test that says that the integration is correct even though it isn't.
+What do you gain? A brittle test that gives no assurance that the code actually works at all. At worst even a test that says that the integration is correct even though it isn't.
 
 So what is the alternative? Use mocks to define the API you need, then provide that API in an adapter, which will be the only part of your code that is coupled to the external library.
 
